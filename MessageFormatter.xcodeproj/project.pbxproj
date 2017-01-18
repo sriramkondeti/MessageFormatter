@@ -15,6 +15,7 @@
 		80480C441E2F1206000D50BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80480C421E2F1206000D50BA /* LaunchScreen.storyboard */; };
 		80480C4F1E2F1206000D50BA /* MessageFormatterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80480C4E1E2F1206000D50BA /* MessageFormatterTests.m */; };
 		80480C5A1E2F1206000D50BA /* MessageFormatterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80480C591E2F1206000D50BA /* MessageFormatterUITests.m */; };
+		80480C691E2F144F000D50BA /* NSString+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 80480C681E2F144F000D50BA /* NSString+Formatter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		80480C551E2F1206000D50BA /* MessageFormatterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessageFormatterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80480C591E2F1206000D50BA /* MessageFormatterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageFormatterUITests.m; sourceTree = "<group>"; };
 		80480C5B1E2F1206000D50BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80480C671E2F144F000D50BA /* NSString+Formatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Formatter.h"; sourceTree = "<group>"; };
+		80480C681E2F144F000D50BA /* NSString+Formatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Formatter.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,8 @@
 				80480C371E2F1206000D50BA /* AppDelegate.h */,
 				80480C381E2F1206000D50BA /* AppDelegate.m */,
 				80480C3A1E2F1206000D50BA /* ViewController.h */,
+				80480C671E2F144F000D50BA /* NSString+Formatter.h */,
+				80480C681E2F144F000D50BA /* NSString+Formatter.m */,
 				80480C3B1E2F1206000D50BA /* ViewController.m */,
 				80480C3D1E2F1206000D50BA /* Main.storyboard */,
 				80480C401E2F1206000D50BA /* Assets.xcassets */,
@@ -275,6 +280,7 @@
 			files = (
 				80480C3C1E2F1206000D50BA /* ViewController.m in Sources */,
 				80480C391E2F1206000D50BA /* AppDelegate.m in Sources */,
+				80480C691E2F144F000D50BA /* NSString+Formatter.m in Sources */,
 				80480C361E2F1206000D50BA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
