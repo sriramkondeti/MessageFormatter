@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8024DFFB1E326C4900B4D2DD /* MessageComposerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8024DFFA1E326C4900B4D2DD /* MessageComposerView.m */; };
 		8024DFFE1E326C5E00B4D2DD /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8024DFFD1E326C5E00B4D2DD /* ChatViewController.m */; };
+		8024E0001E332F1300B4D2DD /* bubble_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 8024DFFF1E332F1300B4D2DD /* bubble_right.png */; };
+		8024E0031E33301400B4D2DD /* ChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8024E0021E33301400B4D2DD /* ChatTableViewCell.m */; };
 		80480C361E2F1206000D50BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80480C351E2F1206000D50BA /* main.m */; };
 		80480C391E2F1206000D50BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80480C381E2F1206000D50BA /* AppDelegate.m */; };
 		80480C3F1E2F1206000D50BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80480C3D1E2F1206000D50BA /* Main.storyboard */; };
@@ -41,6 +43,9 @@
 		8024DFFA1E326C4900B4D2DD /* MessageComposerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageComposerView.m; sourceTree = "<group>"; };
 		8024DFFC1E326C5E00B4D2DD /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatViewController.h; path = ../ChatViewController.h; sourceTree = "<group>"; };
 		8024DFFD1E326C5E00B4D2DD /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatViewController.m; path = ../ChatViewController.m; sourceTree = "<group>"; };
+		8024DFFF1E332F1300B4D2DD /* bubble_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble_right.png; sourceTree = "<group>"; };
+		8024E0011E33301400B4D2DD /* ChatTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTableViewCell.h; sourceTree = "<group>"; };
+		8024E0021E33301400B4D2DD /* ChatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTableViewCell.m; sourceTree = "<group>"; };
 		80480C311E2F1206000D50BA /* MessageFormatter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessageFormatter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80480C351E2F1206000D50BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		80480C371E2F1206000D50BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -110,6 +115,8 @@
 				80480C371E2F1206000D50BA /* AppDelegate.h */,
 				8024DFFC1E326C5E00B4D2DD /* ChatViewController.h */,
 				8024DFFD1E326C5E00B4D2DD /* ChatViewController.m */,
+				8024E0011E33301400B4D2DD /* ChatTableViewCell.h */,
+				8024E0021E33301400B4D2DD /* ChatTableViewCell.m */,
 				80480C381E2F1206000D50BA /* AppDelegate.m */,
 				80480C671E2F144F000D50BA /* NSString+Formatter.h */,
 				80480C681E2F144F000D50BA /* NSString+Formatter.m */,
@@ -125,6 +132,7 @@
 		80480C341E2F1206000D50BA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8024DFFF1E332F1300B4D2DD /* bubble_right.png */,
 				8024DFF91E326C4900B4D2DD /* MessageComposerView.h */,
 				8024DFFA1E326C4900B4D2DD /* MessageComposerView.m */,
 				80480C351E2F1206000D50BA /* main.m */,
@@ -256,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8024E0001E332F1300B4D2DD /* bubble_right.png in Resources */,
 				80480C441E2F1206000D50BA /* LaunchScreen.storyboard in Resources */,
 				80480C411E2F1206000D50BA /* Assets.xcassets in Resources */,
 				80480C3F1E2F1206000D50BA /* Main.storyboard in Resources */,
@@ -288,6 +297,7 @@
 				8024DFFE1E326C5E00B4D2DD /* ChatViewController.m in Sources */,
 				8024DFFB1E326C4900B4D2DD /* MessageComposerView.m in Sources */,
 				80480C361E2F1206000D50BA /* main.m in Sources */,
+				8024E0031E33301400B4D2DD /* ChatTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

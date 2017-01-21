@@ -123,9 +123,9 @@ const NSInteger defaultMaxHeight = 100;
     [self.sendButton setAutoresizingMask:(UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleLeftMargin)];
     [self.sendButton.layer setCornerRadius:5];
     [self.sendButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [self.sendButton setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
-    [self.sendButton setTitleColor:[UIColor grayColor] forState:UIControlStateDisabled];
-    [self.sendButton setTitleColor:[UIColor darkGrayColor] forState:UIControlStateSelected];
+    [self.sendButton setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
+    [self.sendButton setTitleColor:[UIColor whiteColor] forState:UIControlStateDisabled];
+    [self.sendButton setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
     [self.sendButton setBackgroundColor:[UIColor orangeColor]];
     [self.sendButton setTitle:@"Send" forState:UIControlStateNormal];
     [self.sendButton.titleLabel setFont:[UIFont boldSystemFontOfSize:14]];
@@ -169,7 +169,7 @@ const NSInteger defaultMaxHeight = 100;
     }
     messageTextViewFrame.origin.y = _composerTVInsets.top;
     messageTextViewFrame.size.width = sendButtonFrame.origin.x - _composerTVInsets.right - accessoryFrame.size.width - _composerTVInsets.left - _composerBackgroundInsets.left;
-    messageTextViewFrame.size.height = messageTextViewFrame.size.height - _composerBackgroundInsets.top - _composerBackgroundInsets.bottom;
+    sendButtonFrame.size.height = messageTextViewFrame.size.height = messageTextViewFrame.size.height - _composerBackgroundInsets.top - _composerBackgroundInsets.bottom;
     [self.sendButton setFrame:sendButtonFrame];
     [self.messageTextView setFrame:messageTextViewFrame];
     
@@ -414,7 +414,7 @@ const NSInteger defaultMaxHeight = 100;
     // we couldn't properly determine the nav bar height.
     
     // get the size of the application frame (screensize - status bar height)
-    CGSize size = [UIScreen mainScreen].applicationFrame.size;
+    CGSize size = [UIScreen mainScreen].bounds.size;
     
     // if the orientation at this point is landscape but it hasn't fully rotated yet use landscape size instead.
     // handling differs between iOS 7 && 8 so need to check if size is properly configured or not. On
