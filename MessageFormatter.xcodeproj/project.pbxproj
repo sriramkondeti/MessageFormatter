@@ -61,7 +61,7 @@
 		8024E0091E33374F00B4D2DD /* BubbleOutgoing@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BubbleOutgoing@3x.png"; sourceTree = "<group>"; };
 		8024E00A1E33374F00B4D2DD /* BubbleIncoming.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BubbleIncoming.png; sourceTree = "<group>"; };
 		8024E00B1E33374F00B4D2DD /* BubbleIncoming@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BubbleIncoming@2x.png"; sourceTree = "<group>"; };
-		80480C311E2F1206000D50BA /* MessageFormatter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessageFormatter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80480C311E2F1206000D50BA /* Msg Formatter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Msg Formatter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80480C351E2F1206000D50BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		80480C371E2F1206000D50BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		80480C381E2F1206000D50BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 		80480C321E2F1206000D50BA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				80480C311E2F1206000D50BA /* MessageFormatter.app */,
+				80480C311E2F1206000D50BA /* Msg Formatter.app */,
 				80480C4A1E2F1206000D50BA /* MessageFormatterTests.xctest */,
 				80480C551E2F1206000D50BA /* MessageFormatterUITests.xctest */,
 			);
@@ -217,9 +217,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		80480C301E2F1206000D50BA /* MessageFormatter */ = {
+		80480C301E2F1206000D50BA /* Msg Formatter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 80480C5E1E2F1206000D50BA /* Build configuration list for PBXNativeTarget "MessageFormatter" */;
+			buildConfigurationList = 80480C5E1E2F1206000D50BA /* Build configuration list for PBXNativeTarget "Msg Formatter" */;
 			buildPhases = (
 				80480C2D1E2F1206000D50BA /* Sources */,
 				80480C2E1E2F1206000D50BA /* Frameworks */,
@@ -229,9 +229,9 @@
 			);
 			dependencies = (
 			);
-			name = MessageFormatter;
+			name = "Msg Formatter";
 			productName = MessageFormatter;
-			productReference = 80480C311E2F1206000D50BA /* MessageFormatter.app */;
+			productReference = 80480C311E2F1206000D50BA /* Msg Formatter.app */;
 			productType = "com.apple.product-type.application";
 		};
 		80480C491E2F1206000D50BA /* MessageFormatterTests */ = {
@@ -309,7 +309,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				80480C301E2F1206000D50BA /* MessageFormatter */,
+				80480C301E2F1206000D50BA /* Msg Formatter */,
 				80480C491E2F1206000D50BA /* MessageFormatterTests */,
 				80480C541E2F1206000D50BA /* MessageFormatterUITests */,
 			);
@@ -387,12 +387,12 @@
 /* Begin PBXTargetDependency section */
 		80480C4C1E2F1206000D50BA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 80480C301E2F1206000D50BA /* MessageFormatter */;
+			target = 80480C301E2F1206000D50BA /* Msg Formatter */;
 			targetProxy = 80480C4B1E2F1206000D50BA /* PBXContainerItemProxy */;
 		};
 		80480C571E2F1206000D50BA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 80480C301E2F1206000D50BA /* MessageFormatter */;
+			target = 80480C301E2F1206000D50BA /* Msg Formatter */;
 			targetProxy = 80480C561E2F1206000D50BA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -591,7 +591,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		80480C5E1E2F1206000D50BA /* Build configuration list for PBXNativeTarget "MessageFormatter" */ = {
+		80480C5E1E2F1206000D50BA /* Build configuration list for PBXNativeTarget "Msg Formatter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				80480C5F1E2F1206000D50BA /* Debug */,
