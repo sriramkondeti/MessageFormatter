@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		8024DFFB1E326C4900B4D2DD /* MessageComposerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8024DFFA1E326C4900B4D2DD /* MessageComposerView.m */; };
 		8024DFFE1E326C5E00B4D2DD /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8024DFFD1E326C5E00B4D2DD /* ChatViewController.m */; };
-		8024E0001E332F1300B4D2DD /* bubble_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 8024DFFF1E332F1300B4D2DD /* bubble_right.png */; };
 		8024E0031E33301400B4D2DD /* ChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8024E0021E33301400B4D2DD /* ChatTableViewCell.m */; };
 		8024E00C1E33374F00B4D2DD /* BubbleIncoming@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8024E0041E33374F00B4D2DD /* BubbleIncoming@3x.png */; };
 		8024E00D1E33374F00B4D2DD /* Layer1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8024E0051E33374F00B4D2DD /* Layer1@2x.png */; };
@@ -27,6 +26,7 @@
 		80480C4F1E2F1206000D50BA /* MessageFormatterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80480C4E1E2F1206000D50BA /* MessageFormatterTests.m */; };
 		80480C5A1E2F1206000D50BA /* MessageFormatterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80480C591E2F1206000D50BA /* MessageFormatterUITests.m */; };
 		80480C691E2F144F000D50BA /* NSString+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 80480C681E2F144F000D50BA /* NSString+Formatter.m */; };
+		805333111E3369D8000FD7D1 /* Launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 805333101E3369D8000FD7D1 /* Launch.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +51,6 @@
 		8024DFFA1E326C4900B4D2DD /* MessageComposerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageComposerView.m; sourceTree = "<group>"; };
 		8024DFFC1E326C5E00B4D2DD /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatViewController.h; path = ../ChatViewController.h; sourceTree = "<group>"; };
 		8024DFFD1E326C5E00B4D2DD /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatViewController.m; path = ../ChatViewController.m; sourceTree = "<group>"; };
-		8024DFFF1E332F1300B4D2DD /* bubble_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble_right.png; sourceTree = "<group>"; };
 		8024E0011E33301400B4D2DD /* ChatTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTableViewCell.h; sourceTree = "<group>"; };
 		8024E0021E33301400B4D2DD /* ChatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTableViewCell.m; sourceTree = "<group>"; };
 		8024E0041E33374F00B4D2DD /* BubbleIncoming@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BubbleIncoming@3x.png"; sourceTree = "<group>"; };
@@ -78,6 +77,7 @@
 		80480C5B1E2F1206000D50BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80480C671E2F144F000D50BA /* NSString+Formatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Formatter.h"; sourceTree = "<group>"; };
 		80480C681E2F144F000D50BA /* NSString+Formatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Formatter.m"; sourceTree = "<group>"; };
+		805333101E3369D8000FD7D1 /* Launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Launch.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,18 +128,12 @@
 		80480C331E2F1206000D50BA /* MessageFormatter */ = {
 			isa = PBXGroup;
 			children = (
+				8053330C1E3368E4000FD7D1 /* ChatViewController */,
+				8053330D1E3368FB000FD7D1 /* ICarAsiaFormatter */,
 				80480C371E2F1206000D50BA /* AppDelegate.h */,
-				8024DFFC1E326C5E00B4D2DD /* ChatViewController.h */,
-				8024DFFD1E326C5E00B4D2DD /* ChatViewController.m */,
-				8024E0011E33301400B4D2DD /* ChatTableViewCell.h */,
-				8024E0021E33301400B4D2DD /* ChatTableViewCell.m */,
 				80480C381E2F1206000D50BA /* AppDelegate.m */,
-				80480C671E2F144F000D50BA /* NSString+Formatter.h */,
-				80480C681E2F144F000D50BA /* NSString+Formatter.m */,
 				80480C3D1E2F1206000D50BA /* Main.storyboard */,
-				80480C401E2F1206000D50BA /* Assets.xcassets */,
 				80480C421E2F1206000D50BA /* LaunchScreen.storyboard */,
-				80480C451E2F1206000D50BA /* Info.plist */,
 				80480C341E2F1206000D50BA /* Supporting Files */,
 			);
 			path = MessageFormatter;
@@ -148,18 +142,11 @@
 		80480C341E2F1206000D50BA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8024DFFF1E332F1300B4D2DD /* bubble_right.png */,
-				8024E0041E33374F00B4D2DD /* BubbleIncoming@3x.png */,
-				8024E0051E33374F00B4D2DD /* Layer1@2x.png */,
-				8024E0061E33374F00B4D2DD /* BubbleOutgoing.png */,
-				8024E0071E33374F00B4D2DD /* Layer1.png */,
-				8024E0081E33374F00B4D2DD /* BubbleOutgoing@2x.png */,
-				8024E0091E33374F00B4D2DD /* BubbleOutgoing@3x.png */,
-				8024E00A1E33374F00B4D2DD /* BubbleIncoming.png */,
-				8024E00B1E33374F00B4D2DD /* BubbleIncoming@2x.png */,
-				8024DFF91E326C4900B4D2DD /* MessageComposerView.h */,
-				8024DFFA1E326C4900B4D2DD /* MessageComposerView.m */,
+				80480C401E2F1206000D50BA /* Assets.xcassets */,
+				8053330E1E33691F000FD7D1 /* Images */,
+				8053330F1E336935000FD7D1 /* MessageComposer */,
 				80480C351E2F1206000D50BA /* main.m */,
+				80480C451E2F1206000D50BA /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -180,6 +167,51 @@
 				80480C5B1E2F1206000D50BA /* Info.plist */,
 			);
 			path = MessageFormatterUITests;
+			sourceTree = "<group>";
+		};
+		8053330C1E3368E4000FD7D1 /* ChatViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8024DFFC1E326C5E00B4D2DD /* ChatViewController.h */,
+				8024DFFD1E326C5E00B4D2DD /* ChatViewController.m */,
+				8024E0011E33301400B4D2DD /* ChatTableViewCell.h */,
+				8024E0021E33301400B4D2DD /* ChatTableViewCell.m */,
+			);
+			name = ChatViewController;
+			sourceTree = "<group>";
+		};
+		8053330D1E3368FB000FD7D1 /* ICarAsiaFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				80480C671E2F144F000D50BA /* NSString+Formatter.h */,
+				80480C681E2F144F000D50BA /* NSString+Formatter.m */,
+			);
+			name = ICarAsiaFormatter;
+			sourceTree = "<group>";
+		};
+		8053330E1E33691F000FD7D1 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				805333101E3369D8000FD7D1 /* Launch.png */,
+				8024E0041E33374F00B4D2DD /* BubbleIncoming@3x.png */,
+				8024E0051E33374F00B4D2DD /* Layer1@2x.png */,
+				8024E0061E33374F00B4D2DD /* BubbleOutgoing.png */,
+				8024E0071E33374F00B4D2DD /* Layer1.png */,
+				8024E0081E33374F00B4D2DD /* BubbleOutgoing@2x.png */,
+				8024E0091E33374F00B4D2DD /* BubbleOutgoing@3x.png */,
+				8024E00A1E33374F00B4D2DD /* BubbleIncoming.png */,
+				8024E00B1E33374F00B4D2DD /* BubbleIncoming@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		8053330F1E336935000FD7D1 /* MessageComposer */ = {
+			isa = PBXGroup;
+			children = (
+				8024DFF91E326C4900B4D2DD /* MessageComposerView.h */,
+				8024DFFA1E326C4900B4D2DD /* MessageComposerView.m */,
+			);
+			name = MessageComposer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +321,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8024E0001E332F1300B4D2DD /* bubble_right.png in Resources */,
+				805333111E3369D8000FD7D1 /* Launch.png in Resources */,
 				8024E00D1E33374F00B4D2DD /* Layer1@2x.png in Resources */,
 				8024E00E1E33374F00B4D2DD /* BubbleOutgoing.png in Resources */,
 				8024E0111E33374F00B4D2DD /* BubbleOutgoing@3x.png in Resources */,

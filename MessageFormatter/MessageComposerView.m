@@ -114,7 +114,7 @@ const NSInteger defaultMaxHeight = 100;
 
 #pragma mark - Configuration
 - (void)setup {
-    self.backgroundColor = [UIColor colorWithRed:0.96 green:0.96 blue:0.96 alpha:1.0];
+    self.backgroundColor = [UIColor colorWithRed:0.90 green:0.90 blue:0.90 alpha:1.0];
     self.autoresizesSubviews = YES;
     self.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleWidth;
     self.userInteractionEnabled = YES;
@@ -126,7 +126,7 @@ const NSInteger defaultMaxHeight = 100;
     [self.sendButton setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
     [self.sendButton setTitleColor:[UIColor whiteColor] forState:UIControlStateDisabled];
     [self.sendButton setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
-    [self.sendButton setBackgroundColor:[UIColor colorWithRed:0.18 green:0.88 blue:0.13 alpha:1.0]];
+    [self.sendButton setBackgroundColor:[UIColor colorWithRed:0.30 green:0.76 blue:0.28 alpha:1.0]];
     [self.sendButton setTitle:@"Send" forState:UIControlStateNormal];
     [self.sendButton.titleLabel setFont:[UIFont boldSystemFontOfSize:14]];
     

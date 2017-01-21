@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MessageComposerView.h"
-@interface ChatViewController : UIViewController<MessageComposerViewDelegate,UITableViewDataSource,UITableViewDelegate>
+@interface ChatViewController : UIViewController <MessageComposerViewDelegate, UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic, strong) MessageComposerView *messageComposerView;
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
 

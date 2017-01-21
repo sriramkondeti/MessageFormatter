@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ChatTableViewCell : UITableViewCell
-@property (nonatomic, strong) IBOutlet UILabel *lblMessage;
-@property (nonatomic, strong) IBOutlet UIImageView *imbView;
-@property (nonatomic, assign) BOOL myBubble;
+@property(nonatomic, strong) IBOutlet UILabel *lblMessage;
+@property(nonatomic, strong) IBOutlet UIImageView *imbView;
+@property(nonatomic, assign) BOOL myBubble;
 @end
