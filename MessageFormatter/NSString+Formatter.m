@@ -30,7 +30,7 @@
                       resultRange.location += offset; // resultRange.location is updated
                       NSString *replacement = @"************";
                       if ([match resultType] == NSTextCheckingTypePhoneNumber &&
-                          match.range.length <= 12) {
+                          match.range.length <= 16) {
                         formattedMessage = [formattedMessage
                             stringByReplacingCharactersInRange:resultRange
                                                     withString:replacement];

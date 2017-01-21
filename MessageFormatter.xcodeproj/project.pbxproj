@@ -11,6 +11,14 @@
 		8024DFFE1E326C5E00B4D2DD /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8024DFFD1E326C5E00B4D2DD /* ChatViewController.m */; };
 		8024E0001E332F1300B4D2DD /* bubble_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 8024DFFF1E332F1300B4D2DD /* bubble_right.png */; };
 		8024E0031E33301400B4D2DD /* ChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8024E0021E33301400B4D2DD /* ChatTableViewCell.m */; };
+		8024E00C1E33374F00B4D2DD /* BubbleIncoming@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8024E0041E33374F00B4D2DD /* BubbleIncoming@3x.png */; };
+		8024E00D1E33374F00B4D2DD /* Layer1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8024E0051E33374F00B4D2DD /* Layer1@2x.png */; };
+		8024E00E1E33374F00B4D2DD /* BubbleOutgoing.png in Resources */ = {isa = PBXBuildFile; fileRef = 8024E0061E33374F00B4D2DD /* BubbleOutgoing.png */; };
+		8024E00F1E33374F00B4D2DD /* Layer1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8024E0071E33374F00B4D2DD /* Layer1.png */; };
+		8024E0101E33374F00B4D2DD /* BubbleOutgoing@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8024E0081E33374F00B4D2DD /* BubbleOutgoing@2x.png */; };
+		8024E0111E33374F00B4D2DD /* BubbleOutgoing@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8024E0091E33374F00B4D2DD /* BubbleOutgoing@3x.png */; };
+		8024E0121E33374F00B4D2DD /* BubbleIncoming.png in Resources */ = {isa = PBXBuildFile; fileRef = 8024E00A1E33374F00B4D2DD /* BubbleIncoming.png */; };
+		8024E0131E33374F00B4D2DD /* BubbleIncoming@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8024E00B1E33374F00B4D2DD /* BubbleIncoming@2x.png */; };
 		80480C361E2F1206000D50BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80480C351E2F1206000D50BA /* main.m */; };
 		80480C391E2F1206000D50BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80480C381E2F1206000D50BA /* AppDelegate.m */; };
 		80480C3F1E2F1206000D50BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80480C3D1E2F1206000D50BA /* Main.storyboard */; };
@@ -46,6 +54,14 @@
 		8024DFFF1E332F1300B4D2DD /* bubble_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble_right.png; sourceTree = "<group>"; };
 		8024E0011E33301400B4D2DD /* ChatTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTableViewCell.h; sourceTree = "<group>"; };
 		8024E0021E33301400B4D2DD /* ChatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTableViewCell.m; sourceTree = "<group>"; };
+		8024E0041E33374F00B4D2DD /* BubbleIncoming@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BubbleIncoming@3x.png"; sourceTree = "<group>"; };
+		8024E0051E33374F00B4D2DD /* Layer1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Layer1@2x.png"; sourceTree = "<group>"; };
+		8024E0061E33374F00B4D2DD /* BubbleOutgoing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BubbleOutgoing.png; sourceTree = "<group>"; };
+		8024E0071E33374F00B4D2DD /* Layer1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Layer1.png; sourceTree = "<group>"; };
+		8024E0081E33374F00B4D2DD /* BubbleOutgoing@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BubbleOutgoing@2x.png"; sourceTree = "<group>"; };
+		8024E0091E33374F00B4D2DD /* BubbleOutgoing@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BubbleOutgoing@3x.png"; sourceTree = "<group>"; };
+		8024E00A1E33374F00B4D2DD /* BubbleIncoming.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BubbleIncoming.png; sourceTree = "<group>"; };
+		8024E00B1E33374F00B4D2DD /* BubbleIncoming@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BubbleIncoming@2x.png"; sourceTree = "<group>"; };
 		80480C311E2F1206000D50BA /* MessageFormatter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessageFormatter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80480C351E2F1206000D50BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		80480C371E2F1206000D50BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -133,6 +149,14 @@
 			isa = PBXGroup;
 			children = (
 				8024DFFF1E332F1300B4D2DD /* bubble_right.png */,
+				8024E0041E33374F00B4D2DD /* BubbleIncoming@3x.png */,
+				8024E0051E33374F00B4D2DD /* Layer1@2x.png */,
+				8024E0061E33374F00B4D2DD /* BubbleOutgoing.png */,
+				8024E0071E33374F00B4D2DD /* Layer1.png */,
+				8024E0081E33374F00B4D2DD /* BubbleOutgoing@2x.png */,
+				8024E0091E33374F00B4D2DD /* BubbleOutgoing@3x.png */,
+				8024E00A1E33374F00B4D2DD /* BubbleIncoming.png */,
+				8024E00B1E33374F00B4D2DD /* BubbleIncoming@2x.png */,
 				8024DFF91E326C4900B4D2DD /* MessageComposerView.h */,
 				8024DFFA1E326C4900B4D2DD /* MessageComposerView.m */,
 				80480C351E2F1206000D50BA /* main.m */,
@@ -225,6 +249,7 @@
 				TargetAttributes = {
 					80480C301E2F1206000D50BA = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = LDKBJF4W44;
 						ProvisioningStyle = Automatic;
 					};
 					80480C491E2F1206000D50BA = {
@@ -265,9 +290,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				8024E0001E332F1300B4D2DD /* bubble_right.png in Resources */,
+				8024E00D1E33374F00B4D2DD /* Layer1@2x.png in Resources */,
+				8024E00E1E33374F00B4D2DD /* BubbleOutgoing.png in Resources */,
+				8024E0111E33374F00B4D2DD /* BubbleOutgoing@3x.png in Resources */,
 				80480C441E2F1206000D50BA /* LaunchScreen.storyboard in Resources */,
+				8024E00F1E33374F00B4D2DD /* Layer1.png in Resources */,
+				8024E0131E33374F00B4D2DD /* BubbleIncoming@2x.png in Resources */,
+				8024E0121E33374F00B4D2DD /* BubbleIncoming.png in Resources */,
 				80480C411E2F1206000D50BA /* Assets.xcassets in Resources */,
 				80480C3F1E2F1206000D50BA /* Main.storyboard in Resources */,
+				8024E0101E33374F00B4D2DD /* BubbleOutgoing@2x.png in Resources */,
+				8024E00C1E33374F00B4D2DD /* BubbleIncoming@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,7 +479,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LDKBJF4W44;
 				INFOPLIST_FILE = MessageFormatter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sriram.test.MessageFormatter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -457,7 +492,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LDKBJF4W44;
 				INFOPLIST_FILE = MessageFormatter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sriram.test.MessageFormatter;
 				PRODUCT_NAME = "$(TARGET_NAME)";

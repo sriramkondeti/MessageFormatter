@@ -8,20 +8,25 @@
 
 #import "ChatViewController.h"
 #import "ChatTableViewCell.h"
+#import "NSString+Formatter.h"
 @interface ChatViewController ()
-
+{
+    NSMutableArray *messageArray;
+}
 @end
 
 @implementation ChatViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.title = @"Messages";
     self.messageComposerView = [[MessageComposerView alloc] init];
     self.messageComposerView.delegate = self;
-    self.messageComposerView.messagePlaceholder = @"Send a Text with PH.No/URL or Both..";
-    self.tableview.backgroundColor = [UIColor colorWithRed:219.0f/255.0f green:226.0f/255.0f blue:237.0f/255.0f alpha:1.0f];
+    self.messageComposerView.messagePlaceholder = @"Write a Text with PH.No/URL or Both..";
+    self.tableview.layer.contents = (id)[UIImage imageNamed:@"Layer1"].CGImage;
     self.tableview.separatorStyle = UITableViewCellSeparatorStyleNone;
-
+    messageArray = [[NSMutableArray alloc]initWithObjects:@"Hi Lee, can  you call me at +60175570098",@"You can find the listing at https://www.carlist.my/used-cars/3300445/2011-toyota-vios-1-5-trd-sportivo-33-000km-full-toyota-serviced-record-like-new-11/",@"I have another car at  http://www.example.com/listing10.html", nil];
     [self.view addSubview:self.messageComposerView];
 }
 
@@ -37,7 +42,7 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return messageArray.count;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -53,10 +58,12 @@
    ChatTableViewCell *cell = (ChatTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     if (cell == nil)
         cell = [[ChatTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-    cell.lblMessage.text = @"How is that bubble component of yours coming along?How is that bubble component of yours coming along?How is that bubble component of yours coming along?";
+    NSData *data = [[NSString formatString:[messageArray objectAtIndex:indexPath.row]] dataUsingEncoding:NSUTF8StringEncoding];
+    id json = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+    cell.lblMessage.text = [[json objectForKey:@"message"] objectAtIndex:0];
     cell.backgroundColor = [UIColor clearColor];
-   UIImage *img = [UIImage imageNamed:@"bubble_right"];
-    cell.imbView.image = [img resizableImageWithCapInsets:UIEdgeInsetsMake(15, 30, 15, 30) resizingMode:UIImageResizingModeStretch];
+   UIImage *img = [UIImage imageNamed:@"BubbleOutgoing"];
+    cell.imbView.image = [img resizableImageWithCapInsets:UIEdgeInsetsMake(15, 15, 15, 15) resizingMode:UIImageResizingModeStretch];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
@@ -64,7 +71,10 @@
 
 - (void)messageComposerSendMessageClickedWithMessage:(NSString*)message
 {
-    [self.messageComposerView finishEditing];
+    [messageArray addObject:message];
+    [self.tableview reloadData];
+   // [self.messageComposerView finishEditing];
+
 }
 
 /*
