@@ -33,7 +33,8 @@
                         formattedMessage = [formattedMessage
                             stringByReplacingCharactersInRange:resultRange
                                                     withString:replacement];
-                      } else if ([match resultType] == NSTextCheckingTypeLink) {
+                      }
+                      else if ([match resultType] == NSTextCheckingTypeLink) {
                         NSURL *url = [match URL];
                         if ([url.absoluteString rangeOfString:@"carlist.my"].location != NSNotFound) {
                           replacement = @"";
@@ -44,13 +45,15 @@
                                                     initWithObjectsAndKeys:
                                                         [url absoluteString],
                                                         @"url", nil]];//Add URL of host carlist.my to Links array.
-                        } else {
+                        }
+                        else {
                           formattedMessage = [formattedMessage
                               stringByReplacingCharactersInRange:resultRange
                                                       withString:replacement];
                         }
+                                              }
                         offset += ([replacement length] - resultRange.length);//Update offset after replacing the strings.
-                      }
+
                     }];
   [contentDict setObject:[[NSArray alloc] initWithObjects:formattedMessage, nil] forKey:@"message"];
   if (linksArray.count > 0)
