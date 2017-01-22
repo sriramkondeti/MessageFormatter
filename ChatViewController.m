@@ -10,23 +10,26 @@
 #import "ChatTableViewCell.h"
 #import "NSString+Formatter.h"
 @interface ChatViewController () {
-  NSMutableArray *messageArray;
+  NSMutableArray *messageArray;//To Save Default and New Messages.
 }
 @end
 
 @implementation ChatViewController
 
+#pragma mark - View Lifecycle
+
 - (void)viewDidLoad {
   [super viewDidLoad];
+  //Setup MessageComposer
   self.title = @"Messages";
   self.messageComposerView = [[MessageComposerView alloc] init];
   self.messageComposerView.delegate = self;
   self.messageComposerView.messagePlaceholder =
-      @"Write a Text with PH.No/URL or Both..";
+      @"Enter a Text with PH.No/URL/Email/All";
   self.tableview.layer.contents = (id)[UIImage imageNamed:@"Layer1"].CGImage;
   self.tableview.separatorStyle = UITableViewCellSeparatorStyleNone;
-  messageArray = [[NSMutableArray alloc]
-      initWithObjects:
+    //Init with test objects from Assesment Given.
+  messageArray = [[NSMutableArray alloc] initWithObjects:
           @"Hi Lee, can  you call me at +60175570098",
           @"You can find the listing at https://www.carlist.my/used-cars/3300445/2011-toyota-vios-1-5-trd-sportivo-33-000km-full-toyota-serviced-record-like-new-11/",
           @"I have another car at  http://www.example.com/listing10.htm", nil];
@@ -36,6 +39,8 @@
 - (void)didReceiveMemoryWarning {
   [super didReceiveMemoryWarning];
 }
+
+#pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
   return 1;
@@ -58,13 +63,14 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-
+    //Custom Cell Implementation
   ChatTableViewCell *cell = (ChatTableViewCell *)[tableView
       dequeueReusableCellWithIdentifier:@"cell"
                            forIndexPath:indexPath];
   if (cell == nil)
     cell = [[ChatTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
                                     reuseIdentifier:@"cell"];
+    //Call the Custom NSString Categroy, Returns Json String as Per the Requirement.
   NSData *data = [[NSString formatString:[messageArray objectAtIndex:indexPath.row]]
           dataUsingEncoding:NSUTF8StringEncoding];
   id dict = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
@@ -77,9 +83,14 @@
   return cell;
 }
 
+#pragma mark - Messsage Composer Delegate
+
 - (void)messageComposerSendMessageClickedWithMessage:(NSString *)message {
-  [messageArray addObject:message];
-  [self.tableview reloadData];
+  [messageArray addObject:message];//Add Object to Message Array.
+  [self.tableview reloadData];//Reload Table.
 }
 
+- (IBAction)dismissKeyboard:(id)sender {
+    [self.messageComposerView finishEditing];
+}
 @end

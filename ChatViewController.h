@@ -11,5 +11,6 @@
 @interface ChatViewController : UIViewController <MessageComposerViewDelegate, UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic, strong) MessageComposerView *messageComposerView;
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
+- (IBAction)dismissKeyboard:(id)sender;
 
 @end
